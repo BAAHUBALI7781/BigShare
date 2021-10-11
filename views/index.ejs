@@ -26,6 +26,18 @@
             <input type="url" class="show-link" readonly>
             <i class="far fa-copy copy-btn"></i>
         </div>
+        <div class="showMail">
+            <h4>or Send link via mail</h4>
+            <h4></h4>
+            <form action="/files/sendmail" method="post">
+                <div class="mail">
+                    <label for="receiver">Receiver Email: </label>
+                    <input type="email" id="receiver" name="receiver">
+                </div>
+                <input type="url" class="send-link" name="big_link" hidden>
+                <button class="send">Send</button>
+            </form>
+        </div>
     </div>
     <script src="/index.js"></script>
 </body>

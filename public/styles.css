@@ -5,6 +5,10 @@ body,html{
     padding:0px;
     margin:0px;
 }
+h4{
+    margin:10px;
+    margin-bottom:20px;
+}
 body,.upload,.drop-zone,.icon-container{
     display:flex;
     align-items:center;
@@ -81,6 +85,15 @@ body,.upload,.drop-zone,.icon-container{
     border-radius:3px;
     flex-wrap: nowrap;
 }
+.showMail{
+    display:none;
+    text-align: center;
+    border:2px dashed #0288d147;
+    padding:20px;
+    width:80%;
+
+
+}
 .show-link{
     width:85%;
     padding:10px;
@@ -98,4 +111,31 @@ body,.upload,.drop-zone,.icon-container{
 }
 .copy-btn{
     cursor:pointer;
+}
+.mail{
+    display:flex;
+    justify-content:space-around;
+}
+.mail input{
+    border:2px solid #0288d147;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    margin-bottom:10px;
+    outline:none;
+    font-size:0.9rem;
+}
+.send{
+    width:40%;
+    padding:10px;
+    color:white;
+    background-color:#52b2bf;
+    border-radius:3px;
+    font-size:1.1rem;
+    border:none;
+    margin-top:10px
+}
+.send:hover{
+    background-color:#6fc7d3;
+    color:whitesmoke;
 }

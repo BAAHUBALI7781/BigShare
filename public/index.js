@@ -2,7 +2,9 @@ const dropZone=document.querySelector('.drop-zone');
 const fileSelect=document.querySelector('#file-select');
 const browseBtn=document.querySelector('.browsebtn');
 const showlink=document.querySelector('.show-link');
+const sendlink=document.querySelector('.send-link');
 const show=document.querySelector('.show');
+const showMail=document.querySelector('.showMail');
 const copybtn=document.querySelector('.copy-btn');
 
 dropZone.addEventListener("dragover", function(e) {
@@ -43,7 +45,9 @@ const uploadFile=()=>{
     const xhr=new XMLHttpRequest();
     xhr.onreadystatechange=()=>{
         if(xhr.readyState==XMLHttpRequest.DONE){
-            showlink.value=JSON.parse(xhr.response).file;
+            const url=JSON.parse(xhr.response).file;
+            showlink.value=url;
+            sendlink.value=url;
         }
     }
     xhr.upload.onprogress=updateProgress;
@@ -51,9 +55,9 @@ const uploadFile=()=>{
     xhr.send(formData);
 }
 function updateProgress(e){
-    console.log(e);
     if(e.loaded==e.total){
         show.style.display="block";
+        showMail.style.display="block";
         document.querySelector('.ready').style.display='block';
     }
 }
