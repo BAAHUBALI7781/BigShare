@@ -1,0 +1,47 @@
+body,html{
+    font-family : system-ui;
+    background: #eff5fe;
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+body,.upload{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+h3,h4,p{
+    margin: 5px;
+}
+.upload{
+    width:400px;
+    min-height:350px;
+    background-color: white;
+    border-radius: 15%;
+    padding:10px;
+}
+.upload i{
+    color:#52b2bf;
+    font-size:100px;
+}
+.download-link{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.download-btn{
+    width:40%;
+    padding:10px;
+    color:white;
+    background-color:#52b2bf;
+    border-radius:3px;
+    font-size:1.1rem;
+    border:none;
+    margin:20px auto;
+}
+.download-btn:hover{
+    background-color:#6fc7d3;
+    color:whitesmoke;
+}

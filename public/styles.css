@@ -1,0 +1,101 @@
+body,html{
+    font-family : system-ui;
+    background: #eff5fe;
+    height:100%;
+    padding:0px;
+    margin:0px;
+}
+body,.upload,.drop-zone,.icon-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.upload{
+    width:500px;
+    min-height:300px;
+    background-color: white;
+    border-radius: 15%;
+    padding:30px;
+}
+.drop-zone{
+    margin:4% 4%;
+    width:80%;
+    min-height:180px;
+    border:2px dashed #0288d147;
+    border-radius: 4%;
+    transition:all 0.2s ease;
+}
+.icon-container{
+    position:relative;
+    height:100%;
+    width:100%;
+}
+.icon-container i{
+    width:75px;
+    font-size: 50px;
+    text-align: center;
+    position:absolute;
+    color:#52b2bf;
+    transform-origin: bottom;
+    transition:transform 0.25s;
+}
+.icon-container .title{
+    margin-top:120px;
+    transform:scale(0.9);
+}
+.icon-container .right,.icon-container .left{
+    filter:grayscale(0.5);
+}
+.dropped .icon-container .right{
+    transform: rotate(15deg) translateX(13px) scale(0.9);
+}
+.dropped .icon-container .left{
+    transform: rotate(-15deg) translateX(-13px) scale(0.9);
+}
+.dropped .icon-container .center{
+    transform:translateY(-5px);
+}
+.dropped.drop-zone{
+    background-color:#54bdf547;
+    border:2px dashed #01263a47
+}
+.dropped .icon-container i{
+    color:red;
+}
+#file-select{
+    display:none;
+}
+.browsebtn{
+    text-decoration: underline;
+    color:red;
+    cursor:pointer;
+}
+.show{
+    width:82%;
+    text-align:center;
+    border:2px dashed #0288d147;
+    display:flex;
+    align-items:center;
+    display:none;
+    border-radius:3px;
+    flex-wrap: nowrap;
+}
+.show-link{
+    width:85%;
+    padding:10px;
+    outline:none;
+    font-size:1rem;
+    border:none;
+    color:gray;
+}
+.show i{
+    font-size:20px;
+    color:gray;
+}
+.ready{
+    display:none;
+}
+.copy-btn{
+    cursor:pointer;
+}
