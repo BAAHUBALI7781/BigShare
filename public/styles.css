@@ -84,6 +84,7 @@ body,.upload,.drop-zone,.icon-container{
     display:none;
     border-radius:3px;
     flex-wrap: nowrap;
+    margin-bottom:30px;
 }
 .showMail{
     display:none;

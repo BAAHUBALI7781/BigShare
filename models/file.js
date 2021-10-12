@@ -23,6 +23,7 @@ const fileSchema=new mongoose.Schema({
     receiver_mail:{
         type:String
     },
+    expire_at: {type: Date, default: Date.now, expires: 86400} 
 },{
     timestamps:true
 })

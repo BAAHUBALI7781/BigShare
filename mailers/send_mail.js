@@ -1,8 +1,8 @@
 const nodemailer=require('../config/nodemailer');
 
-exports.newLink=(link,email)=>{
+exports.newLink=(link,email,name) => {
 
-    let htmlString=nodemailer.renderTemplate({link,email},'./sendMail.ejs')
+    let htmlString=nodemailer.renderTemplate({link,email,name},'./sendMail.ejs')
     nodemailer.transporter.sendMail({
         from:'sharebig4u',
         to:email,
