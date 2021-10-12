@@ -28,7 +28,7 @@ module.exports.download=async (req,res)=>{
     else
     {
         const filePath=`${__dirname}/../${file.path}`;
-        res.download(filePath);
+        return res.download(filePath);
         
     }
 

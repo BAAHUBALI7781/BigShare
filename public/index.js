@@ -46,13 +46,12 @@ const uploadFile=()=>{
     xhr.onreadystatechange=()=>{
         if(xhr.readyState==XMLHttpRequest.DONE){
             const url=JSON.parse(xhr.response).file;
-            console.log(url);
             showlink.value=url;
             sendlink.value=url;
         }
     }
     xhr.upload.onprogress=updateProgress;
-    xhr.open("POST",`${process.env.APP_BASE_URL}/api/files`);
+    xhr.open("POST","https://bigshare.herokuapp.com/api/files");
     xhr.send(formData);
 }
 function updateProgress(e){

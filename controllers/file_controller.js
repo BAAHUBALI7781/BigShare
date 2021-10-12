@@ -28,7 +28,7 @@ module.exports.control_file=(req,res)=>{
             return res.status(500).send({error:'Internal server error'});
         }
         //Store filename in database
-        const file = new File({
+        const file =await new File({
             fileName:req.file.filename,
             path:req.file.path,
             size:req.file.size,
