@@ -7,11 +7,10 @@ let transporter=nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-        user: 'sharebig4u',
-        pass: 'Hello@12345'
+        user: process.env.USER_NAME,
+        pass: process.env.PASSWORD
     }
 });
-
 let renderTemplate = (data,relativePath)=>{
     let mailHTML;
     ejs.renderFile(
