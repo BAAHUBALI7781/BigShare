@@ -45,6 +45,7 @@ const uploadFile=()=>{
     const xhr=new XMLHttpRequest();
     xhr.onreadystatechange=()=>{
         if(xhr.readyState==XMLHttpRequest.DONE){
+            console.log(JSON.parse(xhr.response));
             const url=JSON.parse(xhr.response).file;
             showlink.value=url;
             sendlink.value=url;

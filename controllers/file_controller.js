@@ -22,7 +22,7 @@ module.exports.control_file=(req,res)=>{
     upload(req,res,async (err)=>{
         if(!req.file)
         {
-            res.json({error:'Select a file'});
+            return res.json({error:'Select a file'});
         } 
         if(err){
             return res.status(500).send({error:'Internal server error'});
