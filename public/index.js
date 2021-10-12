@@ -51,7 +51,7 @@ const uploadFile=()=>{
         }
     }
     xhr.upload.onprogress=updateProgress;
-    xhr.open("POST","http://localhost:8080/api/files");
+    xhr.open("POST","https://bigshare.herokuapp.com/api/files");
     xhr.send(formData);
 }
 function updateProgress(e){
