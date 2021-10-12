@@ -9,6 +9,9 @@ h4{
     margin:10px;
     margin-bottom:20px;
 }
+.logo a{
+    text-align: center;
+}
 .upload,.drop-zone,.icon-container{
     display:flex;
     align-items:center;
@@ -142,4 +145,7 @@ h4{
 .send:hover{
     background-color:#6fc7d3;
     color:whitesmoke;
+}
+.status{
+    display:none;
 }
