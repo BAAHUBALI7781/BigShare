@@ -9,18 +9,21 @@ h4{
     margin:10px;
     margin-bottom:20px;
 }
-body,.upload,.drop-zone,.icon-container{
+.upload,.drop-zone,.icon-container{
     display:flex;
     align-items:center;
     justify-content: center;
     flex-direction: column;
+   
 }
+
 .upload{
     width:500px;
     min-height:300px;
     background-color: white;
     border-radius: 15%;
     padding:30px;
+    margin-left:30%;
 }
 .drop-zone{
     margin:4% 4%;
